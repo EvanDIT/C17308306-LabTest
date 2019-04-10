@@ -29,8 +29,27 @@ public class UI extends PApplet
 
 	public void setup() 
 	{
+		loadData();
 	}
-	
+	public void loadData()
+{
+	Table table = loadTable("colours.csv","header");
+	for (int i = 0; i< table.getRowCount();i++)
+	{
+	  TableRow row = table.getRow(i);
+		System.out.println(row.getString("colour"));
+		System.out.println(row.getString("r"));
+		System.out.println(row.getString("g"));
+		System.out.println(row.getString("b"));
+		System.out.println(row.getString("value"));
+	}
+	for (TableRow row: table.rows())
+    {
+        Colour c = new Colour (row); 
+        Colour.add(c); 
+    }
+} 
+    
 	public void draw()
 	{			
 	}
