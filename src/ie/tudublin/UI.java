@@ -56,8 +56,10 @@ ArrayList<Colour> c = new ArrayList<Colour>();
 	public void draw()
 	{	
 		int rectheight=200;
-		int rectwidth=100;
+		int rectwidth=200;
+		line(50,200,  350, 200);
 		rect(100, 100, rectheight, rectwidth);
-		line(100,100,20,20);
+		// line(50, 150,  200, 150);
+		
 	}
 }
