@@ -82,4 +82,7 @@ public class Colour
 	public void setB(float b) {
 		this.b = b;
     }
+
+	public static void add(Colour c) {
+	}
 }
