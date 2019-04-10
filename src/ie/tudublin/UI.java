@@ -44,12 +44,12 @@ ArrayList<Colour> c = new ArrayList<Colour>();
 		// System.out.println(row.getString("g"));
 		// System.out.println(row.getString("b"));
 		// System.out.println(row.getString("value"));
+		System.out.println(row.getString("colour") + "\t" + row.getString("r")  + "\t" + row.getString("g")  + "\t" + row.getString("b") + "\t"  + row.getString("value"));
 	}
 	for (TableRow row: table.rows())
     {
        Colour c = new Colour (row); 
-			Colour.add(c); 
-			System.out.println(row.getString("colour") + "\t" + row.getString("r")  + "\t" + row.getString("g")  + "\t" + row.getString("b") + "\t"  + row.getString("value"));
+			Colour.add(c);
     }
 } 
     
