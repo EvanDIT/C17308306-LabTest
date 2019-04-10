@@ -29,9 +29,9 @@ public class UI extends PApplet
 
 	public void setup() 
 	{
-		loadData();
+		loadColours();
 	}
-	public void loadData()
+	public void loadColours()
 {
 	Table table = loadTable("colours.csv","header");
 	for (int i = 0; i< table.getRowCount();i++)
@@ -45,8 +45,8 @@ public class UI extends PApplet
 	}
 	for (TableRow row: table.rows())
     {
-       // Colour c = new Colour (row); 
-        //Colour.add(c); 
+       Colour c = new Colour (row); 
+      //	Colour.add(c); 
     }
 } 
     
