@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import java.util.ArrayList;
-
 import processing.core.PApplet;
 import processing.data.Table;
 import processing.data.TableRow;
@@ -9,6 +8,7 @@ import processing.data.TableRow;
 public class UI extends PApplet{
 
 ArrayList<Colour> c = new ArrayList<Colour>();
+
 
 	public void separate(int value)
 	{
@@ -49,11 +49,15 @@ ArrayList<Colour> c = new ArrayList<Colour>();
 	for (TableRow row: table.rows())
     {
        Colour c = new Colour (row); 
-			Colour.add(c);
+			 Colour.add(c);
     }
 } 
     
 	public void draw()
-	{			
+	{	
+		int rectheight=200;
+		int rectwidth=100;
+		rect(100, 100, rectheight, rectwidth);
+		line(100,100,20,20);
 	}
 }

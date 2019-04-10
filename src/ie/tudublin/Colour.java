@@ -22,7 +22,7 @@ public class Colour
     {
         return colour + "\t" + r + "\t" + g + "\t" ;
     }
-    public Colour(TableRow tr)
+    public Colour(TableRow tr) //Constructor Overload
     {
         this(tr.getString("colour"), tr.getFloat("r"),tr.getFloat("g"),tr.getFloat("b"));
     }
