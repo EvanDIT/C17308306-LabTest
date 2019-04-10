@@ -45,8 +45,8 @@ public class UI extends PApplet
 	}
 	for (TableRow row: table.rows())
     {
-        Colour c = new Colour (row); 
-        Colour.add(c); 
+       // Colour c = new Colour (row); 
+        //Colour.add(c); 
     }
 } 
     
