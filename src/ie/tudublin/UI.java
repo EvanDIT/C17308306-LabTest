@@ -8,6 +8,7 @@ import processing.data.TableRow;
 public class UI extends PApplet{
 
 ArrayList<Colour> c = new ArrayList<Colour>();
+//ArrayList<Resistor> r = new ArrayList<Resistor>();
 
 
 	public void separate(int value)
@@ -33,7 +34,24 @@ ArrayList<Colour> c = new ArrayList<Colour>();
 	{
 		loadColours();
 	}
-	public void loadColours()
+	//	loadResistor();
+// 	
+// 	public void loadResistor()
+// {
+// 	Table table = loadTable("resistors.csv","header");
+// 	for (int i = 0; i< table.getRowCount();i++)
+// 	{
+// 	  TableRow row = table.getRow(i);
+// 		System.out.println(row.getString("618"));
+		
+// 	for (TableRow row: table.rows())
+//     {
+//        Resistor r = new Resistor (row); 
+// 			 Resistor.add(r);
+//     }
+// } 
+
+public void loadColours()
 {
 	Table table = loadTable("colours.csv","header");
 	for (int i = 0; i< table.getRowCount();i++)
